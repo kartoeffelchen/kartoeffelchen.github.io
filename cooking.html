@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+      <!-- allow proper rendering and touch zooming on all devices-->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <!-- styling using css and bootstrap-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+      <link href="styles.css" rel="stylesheet">
+
+      <!-- running javascript for this page-->
+      <script src="recipe.js"></script>
+
+      <title> Rita's webpage: cooking </title>
+  </head>
+
+  <body class="body">
+      <!-- insert header image -->
+      <div class="header-img"></div>
+
+      <!-- insert navigation bar -->
+      <nav class="navbar navbar-expand-sm navbar-dark">
+        <!--<a class="navbar-brand" href="#">menu</a>-->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon btn-sm"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="chemistry.html">chemistry teaching</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cs50x.html">CS50x</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="music.html">classical music</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="german.html">German</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="cooking.html">cooking<span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- put content into a container for alignment within a device-->
+      <div class="container-fluid pt-3">
+        <div class="row">
+          <div class="col">
+            <h3> Here you will find some of my favourite recipes. </h3>
+            <br>
+            <p><strong> Best ever chocolate brownies (by Orlando Murrin from BBC Good Food) </strong></p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <p> Ingredients for a
+                <select name="length" id="length">
+                  <option value="18">18</option>
+                  <option selected value="20">20</option>
+                  <option value="23">23</option>
+                  <option value="25">25</option>
+                </select>
+                cm length square tin:
+            </p>
+
+            <table class="table table-striped">
+              <tbody id="ingredientstable">
+              </tbody>
+            </table>
+
+          </div>
+          <div class="col-md-8">
+            <p> Method </p>
+              <ol>
+                <li> Cut the butter into small cubes and tip into a medium bowl.
+                Break the dark chocolate into small pieces and drop into the bowl.
+                Gently heat in a microwave until the butter and chocolate have melted.
+                Leave the chocolate mixture to cool.
+                </li>
+                <li> Break the eggs into a large bowl and tip in the sugar.
+                Use an electric mixer to whisk the eggs and sugar for a few minutes,
+                until the mixture becomes really pale and about double its original volume.
+                </li>
+                <li> Sieve the plain flour, cocoa powder and baking powder into a separate bowl. </li>
+                <li> Chop the white chocolate and milk chocolate into chunks. </li>
+                <li> Pour the cooled chocolate mixture over the eggy mousse,
+                then gently fold together with a rubber spatula.
+                </li>
+                <li> Gently fold in the flour mixture until it is mixed, but do not overdo this mixing. </li>
+                <li> Stir in the white and milk chocolate chunks until they are dotted throughout.
+                Then Pour the mixture into the tin.
+                </li>
+                <li> Bake in the middle of the oven which has been preheated at 180 &deg;C/160 &deg;C fan/gas 4 for 25 to 30 minutes. </li>
+                <li> Leave the tin to cool and put it in the refrigerator for 2 hours before cutting it into smaller pieces. </li>
+              </ol>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
