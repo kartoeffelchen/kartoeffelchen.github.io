@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<title>Rita's webpage: python code</title>
+
+<pre>
+mass_bottle = float(input("Mass of bottle + solid: "))
+mass_empty_bottle = float(input("Mass of bottle: "))
+mass_solid = round(mass_bottle - mass_empty_bottle ,3)
+
+print(f"Mass of acid used: {mass_solid}")
+
+trial = int(input("Number of results: "))
+
+results = {}
+
+for i in range(trial):
+    initial = float(input("Initial reading: "))
+    final = float(input("Final reading: " ))
+    titre = final - initial
+    results[(i+1)] = round(titre, 2)
+
+print(f"{results}")
+
+average = []
+
+print("Enter experiment number to calculate the average. Enter c when done.")
+while True:
+    choose_results = input("> ")
+    if choose_results == 'c' or choose_results == 'C':
+        break
+    average.append(results[int(choose_results)])
+
+average_titre = round(sum(average) / len(average), 3)
+
+print(f"Q.1: Average titre: {average_titre}")
+
+print("Q.2: Amount of NaOH: 0.0025")
+
+print(f"Q.3: Amount of H3X in {average_titre} cm3 titre: {round(0.0025/3, 6)}")
+
+print(f"Q.4: Amount of H3X in 250 cm3: {round((0.0025/3)/(average_titre/250), 6)}")
+
+print(f"Q.5: Molar mass: {round(mass_solid/((0.0025/3)/(average_titre/250)))}")
+
+print(f"Q.6: n = 1")
+</pre>
+</html>
